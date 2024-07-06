@@ -12,8 +12,16 @@
 		<h1 class="my-3 text-4xl font-bold">Sign in</h1>
 		<p class="text-sm text-gray-600">Sign in to access your account</p>
 	</div>
+	@if(Session::has('message'))
+	<div class="bg-green-200 p-3 rounded">
+        <ul>
+            <li>{{Session::get('message')}}</li>
+        </ul>
+    </div>
+	@endif
+
     @if($errors->any())
-    <div class="bg-red-200 p-3">
+    <div class="bg-red-200 p-3 rounded">
         <ul>
             @foreach($errors->all() as $error)
             <li>{{$error}}</li>
@@ -41,7 +49,7 @@
 				<button type="submit" class="w-full px-8 py-3 font-semibold rounded-md bg-sky-600 text-gray-50">Sign in</button>
 			</div>
 			<p class="px-6 text-sm text-center text-gray-600">Don't have an account yet?
-				<a rel="noopener noreferrer" href="#" class="hover:underline text-sky-600">Sign up</a>.
+				<a rel="noopener noreferrer" href="{{route('register')}}" class="hover:underline text-sky-600">Sign up</a>.
 			</p>
 		</div>
 	</form>

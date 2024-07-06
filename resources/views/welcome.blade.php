@@ -26,7 +26,7 @@
 		</ul>
 		<div class="items-center flex-shrink-0 hidden lg:flex">
 			<a href="{{route('login')}}" class="self-center px-8 py-3 hover:font-bold rounded-l-lg bg-sky-600 text-gray-50" >Sign in</a>
-			<button class="self-center px-8 py-3 hover:font-bold border-l-2 border-l-white rounded-r-lg bg-sky-600 text-gray-50">Sign up</button>
+			<a href="{{route('register')}}" class="self-center px-8 py-3 hover:font-bold border-l-2 border-l-white rounded-r-lg bg-sky-600 text-gray-50">Sign up</a>
 		</div>
 		<button class="p-4 lg:hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-800">

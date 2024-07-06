@@ -3,7 +3,7 @@
     
     <div class="max-w-sm  mt-20 p-4 shadow-md rounded-lg border-t-2 border-gray-400 dark:bg-gray-900 dark:text-white">
         <div class="flex justify-between pb-4">
-            <p class="font-bold text-xl">Writers</p>
+            <p class="font-bold text-xl">Writer/Books</p>
         </div>
         <ul class="flex flex-col pl-1">
         @foreach($writers as $writer)
